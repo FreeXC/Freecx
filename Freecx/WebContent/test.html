@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title></title> 
+	<script type="text/javascript" src="/Feecx/static/js/jquery-1.8.2.js" ></script>
+<style>
+    .show{
+        width:360px;height:640px;overflow-x:hidden;overflow-y:auto;margin: 50px auto;border: 2px solid pink;box-sizing: border-box;
+    }
+    .show div{
+        width: 100%;height: 500px;background-color: #E5EECC;font-size:48px;text-align:center;line-height:500px;
+    }
+    .show div:nth-child(2n){
+        background-color: #E8DFC4;
+    }
+body{
+
+    overflow-x:hidden;
+}
+</style>
+<script type="text/javascript">
+
+$(document).scroll(function(){
+	$("#lb").text($(document).scrollTop());
+	})
+	
+</script>
+</head>
+<body style="overflow: ">
+   <span id="lb" style="top:100px;left:100px;position:fixed;"></span>
+</body>
+
+</html>
